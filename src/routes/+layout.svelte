@@ -5,12 +5,12 @@
 	import { AppShell, AppBar } from "@skeletonlabs/skeleton";
 	import { getKeys } from "../environment";
 	import { onMount } from "svelte";
-	// import { initFirebase } from "$lib/firebase-utils";
+	import { initFirebase } from "$lib/firebase-utils";
 
-//	onMount(async () => {
-//		initFirebase(getKeys().firebase);
-//	});
-// </script> 
+	onMount(async () => {
+		initFirebase(getKeys().firebase);
+	});
+ </script> 
 
 <!-- App Shell -->
 <AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">

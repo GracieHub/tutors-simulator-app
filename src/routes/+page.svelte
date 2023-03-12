@@ -59,7 +59,7 @@
             <label class="label">
                 <span> Module</span>
                 <select
-                    id="course"
+                    id="module"
                     bind:value={module}
                     class="select"
                     placeholder="Module"
@@ -139,7 +139,7 @@
             <label class="label">
                 <span> Slack Huddle Link</span>
                 <select
-                    id="slack"
+                    id="slackhuddle"
                     bind:value={slackhuddle}
                     class="select"
                     placeholder="Slack Huddle Link"
@@ -151,7 +151,7 @@
             <label class="label">
                 <span> Slack Message Link</span>
                 <select
-                    id="slack"
+                    id="slackmsg"
                     bind:value={slackmsg}
                     class="select"
                     placeholder="Slack Message Link"

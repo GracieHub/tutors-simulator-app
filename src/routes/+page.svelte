@@ -5,13 +5,22 @@
 	// const name = document.querySelector(".name");
 
     let name = '';
-    let course = '';
+    let module = '';
     let topic = '';
+    let topicimage = '';
+    let profileimage = '';
+    let slackmsg = '';
+    let slackhuddle = '';
+
     function handleClick() {
         const courseData = {
             name: name,
-            course: course,
-            topic: topic
+            module: module,
+            topic: topic,
+            topicimage: topicimage,
+            profileimage: profileimage,
+            slackmsg: slackmsg,
+            slackhuddle: slackhuddle
         };
         writeObj('StudentInfo', courseData);
         name;
@@ -33,13 +42,13 @@
                 />
             </label>
             <label class="label">
-                <span> Course</span>
+                <span> Module</span>
                 <input
-                    id="course"
-                    bind:value={course}
+                    id="module"
+                    bind:value={module}
                     class="input variant-form-material"
                     type="text"
-                    placeholder="Course"
+                    placeholder="Module"
                 />
             </label>
             <label class="label">
@@ -50,6 +59,46 @@
                     class="input variant-form-material"
                     type="text"
                     placeholder="Topic"
+                />
+            </label>
+            <label class="label">
+                <span> Topic Image</span>
+                <input
+                    id="image"
+                    bind:value={topicimage}
+                    class="input variant-form-material"
+                    type="text"
+                    placeholder="Image"
+                />
+            </label>
+            <label class="label">
+                <span> Profile Image</span>
+                <input
+                    id="profileimage"
+                    bind:value={profileimage}
+                    class="input variant-form-material"
+                    type="text"
+                    placeholder="Profile Image"
+                />
+            </label>
+            <label class="label">
+                <span> Slack Huddle Link</span>
+                <input
+                    id="slack"
+                    bind:value={slackhuddle}
+                    class="input variant-form-material"
+                    type="text"
+                    placeholder="Slack Huddle Link"
+                />
+            </label>
+            <label class="label">
+                <span> Slack Message Link</span>
+                <input
+                    id="slack"
+                    bind:value={slackmsg}
+                    class="input variant-form-material"
+                    type="text"
+                    placeholder="Slack Message Link"
                 />
             </label>
         </div>

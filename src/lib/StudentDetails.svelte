@@ -20,8 +20,9 @@
 			topic: topicSelected,
 			topicimage: topicObj.topicimage,
 			profileimage: studentObj.profileimage,
-			slackmsg: studentObj.slackhuddle,
-			slackhuddle: topicObj.topichuddle
+			slackmsg: studentObj.slackmsg,
+			slackhuddle: studentObj.slackhuddle,
+			topichuddle: topicObj.topichuddle
 		};
 		console.log(courseData);
 		writeObj("StudentInfo", courseData);

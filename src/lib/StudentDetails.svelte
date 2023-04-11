@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	import { writeObj } from "$lib/firebase-utils";
 	import { moduleData, studentData, topicData } from "../data";
 

@@ -12,4 +12,6 @@
     <StudentDetails />
     <StudentDetails />
     <StudentDetails />
+    <StudentDetails />
+    <StudentDetails />
 </div>
